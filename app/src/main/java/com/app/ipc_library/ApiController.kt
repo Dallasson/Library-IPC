@@ -1,11 +1,13 @@
 package com.app.ipc_library
 
+import android.net.Uri
+
 interface ApiController {
 
 
-    fun enableJsonFile(shouldSendJsonFile : Boolean)
-    fun enableJsonApi(shouldSendJsonApi : Boolean)
-    fun enableEditText(shouldSendEditText : Boolean)
+    fun sendJsonFile(uri : Uri?)
+    fun sendJsonApi()
+    fun sendEditText(text : String)
 
 
 }
